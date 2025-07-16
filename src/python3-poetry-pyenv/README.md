@@ -7,8 +7,8 @@ devcontainer with pyenv as main source to get python version and poetry to manag
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| pythonVersion | Python version to install with Pyenv | string | 3.10 |
-| imageVariant | Select the os to install | string | jammy |
+| pythonVersion | Python version to install with Pyenv | string | 3.12 |
+| imageVariant | Select the os to install | string | noble |
 
 This template install packages under the "`vscode`" user. The packages installed are `Pyenv` and `Poetry` through its official installators. Note that the installation of Python is made through  `pyenv install <version>` command and `poetry` is configured to create the virtual environment in the root project directory. The former to avoid to have a global installation of python and the latter is done in this way because the vscode python extension look first in the project root to look for the python environment to use.
 
